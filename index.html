@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="inflacionou.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="container">
+            <fieldset class="field">
+                <form>
+                    <label>Escolha o alimento</label>
+                    <input type="radio" name="fruta" value="tomate" onclick="func()">Tomate</input>
+                    <input type="radio" name="fruta" value="laranja"onclick="func()">Laranja</input>
+                    <input type="radio" name="fruta" value="abacaxi"onclick="func()">Abacaxi</input>
+                    <input type="radio" name="fruta" value="limao"onclick="func()">Limão</input>
+                    <br><br>
+                    <label>Digite o valor anterior</label>
+                    <input type="text" id="valorAntigo" placeholder="Exemplo: 10"><br>
+                    <label>Digite o valor atual</label>
+                    <input type="text" id="valorAtual" placeholder="Exemplo: 15"><br>
+                    <button type="button" onclick="getInputValue();">Calcular</button>
+                    <br>
+                    <div id="result" >
+                       <h3 id="texto">Inflacionou?</h3> 
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </main>
+    
+</body>
+</html>
